@@ -14,9 +14,13 @@
 
 class Server {
 private:
+    uint16_t port;
+
 public:
-    Server();
+    Server(uint16_t port);
     ~Server();
+
+    bool run(uint16_t queue);
 };
 
 #endif  // INC_SERVER_HPP

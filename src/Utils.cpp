@@ -1,3 +1,14 @@
+/**
+ * @file    Utils.cpp
+ * @author  José C. Pereira (jpereira1330@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date    2023-09-29
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
 #include <iostream>
 #include <boost/program_options.hpp>
 

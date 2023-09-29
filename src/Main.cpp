@@ -1,10 +1,21 @@
 #include <iostream>
 
 #include "Utils.hpp"
+#include "Server.hpp"
 
 int main(int argc, char const *argv[]) {
+    bool ret;
+    Server server(8000);
 
-    Utils::get_input_param(argc, argv);
+    ret = Utils::get_input_param(argc, argv);
+    if (ret == false) {
+        return EXIT_FAILURE;
+    }
+
+    ret = server.run(10);
+    if (ret == false) {
+        return EXIT_FAILURE;
+    }
 
     return EXIT_SUCCESS;
 }
